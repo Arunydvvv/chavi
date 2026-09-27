@@ -62,7 +62,7 @@ document.querySelector('.yes-btn').addEventListener('click', function() {
 
     finalQuestion.innerHTML = 
         "<h2>I know you're DUMB😂</h2>" +
-        "<p>Coz you're trying to beat a program made to prove u DUMB!!😭</p>" +
+        "<p>Coz you're trying to beat a coded just to prove u DUMB!!😭</p>" +
         "<div style='margin-top: 2rem; font-size: 3rem'>🚬🍾</div>";
 });
 
