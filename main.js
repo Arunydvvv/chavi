@@ -5,7 +5,7 @@
     let lastTime = 0;
 
     function animate(timestamp) {
-        if (!lastTime || timestamp - lastTime >= 400) { // Reduced frequency
+        if (!lastTime || timestamp - lastTime >= 300) { // Reduced frequency
             const particle = document.createElement('div');
             particle.className = 'love-particle';
             particle.textContent = emojis[Math.floor(Math.random() * emojis.length)];
@@ -62,7 +62,7 @@ document.querySelector('.yes-btn').addEventListener('click', function() {
 
     finalQuestion.innerHTML = 
         "<h2>I know you're DUMB😂</h2>" +
-        "<p>Coz you're trying to beat a program coded just to prove u DUMB!!😭</p>" +
+        "<p>Coz you're trying to beat a coded just to prove u DUMB!!😭</p>" +
         "<div style='margin-top: 2rem; font-size: 3rem'>🚬🍾</div>";
 });
 
