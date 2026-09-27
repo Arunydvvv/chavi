@@ -17,36 +17,8 @@
         <div class="message" data-index="6">Anyways, wanna go for a run?</div>
 
         <div class="final-question">
-            <h2>RUNNNNNNNNNN (Tap to Jump)</h2>
-<div id="game" onclick="jump()">
-    <div id="character">🏃‍♀️</div>
-    <div id="obstacle">🪨</div>
+            <h2>RUNNNNNNNNNN </h2>
 </div>
-            <script>
-const character = document.getElementById("character");
-const obstacle = document.getElementById("obstacle");
-
-function jump() {
-    if (character.classList.contains("animate-jump")) return;
-    character.classList.add("animate-jump");
-    setTimeout(function() {
-        character.classList.remove("animate-jump");
-    }, 500); // 500ms matches the CSS animation duration
-}
-
-// Collision detection
-setInterval(function() {
-    let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-    let obstacleLeft = parseInt(window.getComputedStyle(obstacle).getPropertyValue("left"));
-
-    // If obstacle is under the character and character hasn't jumped high enough
-    if (obstacleLeft < 60 && obstacleLeft > 20 && characterTop >= 110) {
-        obstacle.style.animation = "none";
-        obstacle.style.display = "none";
-        alert("Oof! Reload to run again.");
-    }
-}, 10);
-</script>
             <div class="btn-group">
                 <button class="valentine-btn yes-btn">I'M DUMB!</button>
                 <button class="valentine-btn no-btn">I'M FASTER</button>
