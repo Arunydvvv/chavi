@@ -165,55 +165,6 @@ body::before {
     will-change: transform;
 }
 
-#game {
-    width: 300px;
-    height: 150px;
-    border: 2px solid #333;
-    border-radius: 10px;
-    margin: 20px auto;
-    position: relative;
-    overflow: hidden;
-    background-color: #f9f9f9;
-    cursor: pointer;
-}
-
-#character {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    font-size: 40px;
-    line-height: 40px;
-}
-
-#obstacle {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 0px;
-    right: -30px;
-    font-size: 30px;
-    line-height: 30px;
-    animation: block 2s infinite linear;
-}
-
-.animate-jump {
-    animation: jump 0.5s linear;
-}
-
-@keyframes jump {
-    0% { bottom: 0; }
-    40% { bottom: 80px; }
-    50% { bottom: 90px; }
-    60% { bottom: 80px; }
-    100% { bottom: 0; }
-}
-
-@keyframes block {
-    0% { right: -30px; }
-    100% { right: 300px; }
-}
 @keyframes burst {
     0% { transform: scale(0); opacity: 1; }
     100% { transform: scale(5); opacity: 0; }
