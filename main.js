@@ -5,7 +5,7 @@
     let lastTime = 0;
 
     function animate(timestamp) {
-        if (!lastTime || timestamp - lastTime >= 500) { // Reduced frequency
+        if (!lastTime || timestamp - lastTime >= 300) { // Reduced frequency
             const particle = document.createElement('div');
             particle.className = 'love-particle';
             particle.textContent = emojis[Math.floor(Math.random() * emojis.length)];
