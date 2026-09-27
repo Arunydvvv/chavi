@@ -24,6 +24,7 @@
 let currentMessage = 0;
 const messages = document.querySelectorAll('.message');
 const finalQuestion = document.querySelector('.final-question');
+const btnGroup = document.querySelector('.btn-group');
 
 function showNextMessage() {
     requestAnimationFrame(() => {
@@ -38,6 +39,7 @@ function showNextMessage() {
         } else {
             finalQuestion.style.display = 'block';
             finalQuestion.style.opacity = '1';
+            btnGroup.classList.add('show');
         }
     });
 }
