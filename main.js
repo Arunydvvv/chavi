@@ -1,6 +1,6 @@
   // Optimized particle creation
   function createParticles() {
-    const emojis = ['❤️', '🌎', '🌠', '💝', '🌟', '💞'];
+    const emojis = ['🐈', '🚬', '🍾', '🍻', '🍁', '💸'];
     const container = document.body;
     let lastTime = 0;
 
@@ -52,7 +52,7 @@ document.querySelector('.yes-btn').addEventListener('click', function() {
         for (let i = 0; i < 50; i++) {
             const heart = document.createElement('div');
             heart.className = 'heart-burst';
-            heart.textContent = '❤️';
+            heart.textContent = '🍻';
             heart.style.left = Math.random() * 100 + '%';
             heart.style.top = Math.random() * 100 + '%';
             heart.style.animationDelay = Math.random() * 0.5 + 's';
@@ -61,9 +61,9 @@ document.querySelector('.yes-btn').addEventListener('click', function() {
     });
 
     finalQuestion.innerHTML = 
-        "<h2>🎉 I know you're my baby boo 💝</h2>" +
-        "<p>You've made my heart explode with joy!</p>" +
-        "<div style='margin-top: 2rem; font-size: 3rem'>💞🌟</div>";
+        "<h2>I know you're DUMB😂</h2>" +
+        "<p>Coz you're trying to beat a program made to prove u DUMB!!😭</p>" +
+        "<div style='margin-top: 2rem; font-size: 3rem'>🚬🍾</div>";
 });
 
 document.querySelector('.no-btn').addEventListener('mouseover', function() {
